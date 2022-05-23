@@ -1,0 +1,23 @@
+1. install Docker desktop
+2. install Docker toolbox (from github)
+3. Open VS code and install docker extension
+4. search Docker Quickstart Terminal in windows search and open iy
+5. it will open and install some softwares.
+#if docker terminal fails then open cmd as admin and enter : bcdedit /set hypervisorlaunchtype off
+and reboot the pc.
+6. when docker terminal opens enter: docker --version
+7. create folder on desktop and name it in small case and open that in VS code.
+8. create html pages
+9. create dockerfile (name: Dockerfile) #without extension#
+10. write following commands in Dockerfile:
+FROM node:alpine
+COPY . /foldername
+CMD node /foldername/index.html
+11. open new terminal of vs code (its is on top menu of VS code)
+12. type following command one by one in vs code terminal:
+docker --version
+docker build -t foldername .   (dont forget space and . after folder name)
+	#some process will run it will build image#
+docker images   (it shows the folder name in image column)
+
+DONE
